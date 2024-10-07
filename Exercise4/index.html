@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/vi/thumb/2/29/Logo-HCMIU.svg/1200px-Logo-HCMIU.svg.png" type="image/x-icon">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+HR:wght@100..400&display=swap');
+
+        * {
+            scroll-behavior: smooth;
+            font-family: 'Quicksand', sans-serif;
+        }
+        html {
+            background-color: #f8f9fa;
+        }
+        h1, h2 {
+            margin: 12px 0;
+            font-family: Playwrite HR, sans-serif;
+        }
+        .dashed-list li:before {
+            content: "- ";
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="d-flex justify-content-between p-3">
+        <div class="d-flex align-items-center">
+            <a href="#">
+                <img src="https://scontent.fsgn5-8.fna.fbcdn.net/v/t39.30808-6/455295654_2049441015490104_1750941587542483539_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=OaOfULu_iFkQ7kNvgHEK2GM&_nc_ht=scontent.fsgn5-8.fna&_nc_gid=AaJ_1yTmXNgXGTUQ6SR53kK&oh=00_AYD18C1KbaVcCoImDvX3mZblDfKIeclztQ3gOMxhTSANDg&oe=67089517" 
+                alt="Avatar" class="rounded-circle" style="height:48px;width:48px;">
+            </a>
+            <p class="ml-3 mb-0 fw-bold">Tran Thien</p>
+        </div>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Articles</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="text-center py-4 border-bottom">
+        <h1 class="display-4">Frontend Developer</h1>
+        <p>HTML only with proper layout, no styling</p>
+    </header>
+
+    <main class="container">
+        <section class="row">
+            <!-- Projects -->
+            <div class="col-md-4 mb-4">
+                <h2>Projects</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">HTML Only Portfolio</li>
+                    <li class="list-group-item">Calculator</li>
+                    <li class="list-group-item">Quiz App</li>
+                    <li class="list-group-item">Countdown Timer</li>
+                    <li class="list-group-item">Product Upcoming Page</li>
+                </ul>
+            </div>
+
+            <!-- Experience -->
+            <div class="col-md-4 mb-4">
+                <h2>Work Experience</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <h5>roadmap.sh</h5>
+                        <p>Solved all the frontend projects</p>
+                        <a href="#">Visit my Profile</a>
+                    </li>
+                    <li class="list-group-item">
+                        <h5>OpenSource Work</h5>
+                        <p>Contributed to 50 opensource projects. Made my own projects with 200 GitHub Stars.</p>
+                        <a href="#">Visit my GitHub Profile</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Education  -->
+            <div class="col-md-4 mb-4">
+                <h2>Education</h2>
+                <p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>
+                <p>Courses I took:</p>
+                <ul class="list-unstyled dashed-list">
+                    <li>Object Oriented Programming</li>
+                    <li>Data Structures and Algorithms</li>
+                    <li>Web Engineering</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Human Computer Interaction</li>
+                    <li>Computer Graphics</li>
+                    <li>Database Management Systems</li>
+                    <li>Distributed Database Systems</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Reviews  -->
+        <section class="row">
+            <div class="col-12">
+                <h2>Reviews from my Teachers</h2>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="border p-4 rounded mb-4">
+                    <p class="mb-2">John doe was a brilliant student; always stood out with his assignments.</p>
+                    <p class="font-weight-bold">Jane Doe</p>
+                    <p>Assistant Professor</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="border p-4 rounded mb-4">
+                    <p class="mb-2">John doe was a brilliant student; always stood out with his assignments.</p>
+                    <p class="font-weight-bold">Jane Doe</p>
+                    <p>Assistant Professor</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="border p-4 rounded mb-4">
+                    <p class="mb-2">John doe was a brilliant student; always stood out with his assignments.</p>
+                    <p class="font-weight-bold">Jane Doe</p>
+                    <p>Assistant Professor</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-4">
+        <p>© all rights reserved 2025</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

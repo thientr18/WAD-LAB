@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HR:wght@100..400&display=swap');
+
+@import 'responsive.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f1f1f1;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none; 
+}
+  
+a {
+    text-decoration: none; 
+}
+
+/* Start Nav */
+nav {
+    display: flex;
+    margin-left: 12px;
+}
+.user {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.user img {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+}
+.user a {
+    padding-right: 12px;
+}
+nav ul {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+}
+nav ul li {
+    padding: 24px 12px;
+}
+nav ul li a, .user {
+    font-weight: 700;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    color: black;
+}
+nav li a:hover {
+    cursor: pointer;
+    color: #666;
+}
+/* End Nav */
+
+/* Start Header */
+header {
+    text-align: center;
+    padding: 30px 0 88px;
+    border-bottom: solid 3px black;
+}
+header h1 {
+    font-family: Playwrite HR;
+    letter-spacing: 2px;
+}
+
+header h1, p {
+    margin: 0;
+}
+/* End Header */
+
+/* Start Main */
+.info {
+    display: flex;
+    text-align: left;
+}
+.info h2 {
+    padding-left: 28px;
+    padding-bottom: 20px;
+    font-family: Playwrite HR;
+}
+.table-item {
+    width: 100%;
+}
+.table-item td > * {
+    padding: 8px 0 8px 28px;
+}
+.project, .experience, .education {
+    padding: 20px 0;
+}
+.project {
+    width: 25%;
+}
+.project td {
+    padding: 8px 0 8px 28px;
+}
+.project tr:not(:last-child) td {
+    border-bottom: solid 2px black;
+}
+.experience {
+    width: 40%;
+    line-height: 1.8;
+}
+.experience h2 {
+    padding-bottom: 2px;
+}
+.experience td {
+    padding: 10px 0;
+}
+.experience a {
+    color: #0168ac;
+}
+.experience tr:first-child td {
+    border-bottom: solid 2px black;
+}
+.education {
+    width: 35%;
+}
+.education h2 {
+    padding-bottom: 26px;
+}
+ul.dashed > li:before {
+    content: "- ";
+}
+.contain {
+    border: solid 2px black;
+}
+
+.review {
+    margin: 28px;
+}
+.review h2 {
+    font-family: Playwrite HR;
+}
+.review ul {
+    margin-top: 20px;
+}
+.review li {
+    height: 220px;
+    width: 25%;
+    display: inline-block;
+    border-radius: 30px;
+    border: solid 1px black;
+    margin: 0 12px;
+}
+.review li div {
+    padding: 28px 12px;
+}
+.review li div .text {
+    margin-bottom: 16px;
+}
+/* End Main */
+
+/* Start Footer */
+footer {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+/* End Footer */
